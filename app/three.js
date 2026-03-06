@@ -26,7 +26,7 @@ const scene = new THREE.Scene();
 scene.background = new THREE.Color(0x808080);
 
 // Camera
-const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 20000);
+const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 200000);
 camera.position.set(6000, 4000, 6000);
 
 // Lights
@@ -229,6 +229,8 @@ paramsUiHandle = initParamsUi({
         { sliderId: "sEndMonth", valueId: "vEndMonth", key: "EndMonth" },
         { sliderId: "sEndDay", valueId: "vEndDay", key: "EndDay" },
         { sliderId: "sEndHour", valueId: "vEndHour", key: "EndHour" },
+        { sliderId: "sMoveX", valueId: "vMoveX", key: "MoveX" },
+        { sliderId: "sMoveY", valueId: "vMoveY", key: "MoveY" },
     ],
 });
 
@@ -316,6 +318,8 @@ function initWarp(roomKey) {
             { sliderId: "sEndMonth", valueId: "vEndMonth", key: "EndMonth" },
             { sliderId: "sEndDay", valueId: "vEndDay", key: "EndDay" },
             { sliderId: "sEndHour", valueId: "vEndHour", key: "EndHour" },
+            { sliderId: "sMoveX", valueId: "vMoveX", key: "MoveX" },
+            { sliderId: "sMoveY", valueId: "vMoveY", key: "MoveY" },
         ],
     });
 }

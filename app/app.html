@@ -92,7 +92,7 @@
                     <label for="sStartHour" style="color:black">StartHour</label>
                     <span id="vStartHour" style="color:black">1</span>
                 </div>
-                <input id="sStartHour" type="range" min="1" max="24" step="1" value="1" style="width:100%;">
+                <input id="sStartHour" type="range" min="0" max="23" step="1" value="0" style="width:100%;">
             </div>
             
              <!-- EndtMonth -->
@@ -119,8 +119,28 @@
                     <label for="sEndHour" style="color:black">EndHour</label>
                     <span id="vEndHour" style="color:black">1</span>
                 </div>
-                <input id="sEndHour" type="range" min="1" max="24" step="1" value="1" style="width:100%;">
+                <input id="sEndHour" type="range" min="0" max="23" step="1" value="1" style="width:100%;">
             </div>
+
+            
+            <!-- MoveX -->
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center;">
+                    <label for="sMoveX" style="color:black">MoveX</label>
+                    <span id="vMoveX" style="color:black">1</span>
+                </div>
+                <input id="sMoveX" type="range" min="0" max="100000" step="100" value="1" style="width:100%;">
+            </div>
+
+             <!-- MoveY -->
+            <div>
+                <div style="display:flex; justify-content:space-between; align-items:center;">
+                    <label for="sMoveY" style="color:black">MoveY</label>
+                    <span id="vMoveY" style="color:black">1</span>
+                </div>
+                <input id="sMoveY" type="range" min="0" max="100000" step="100" value="1" style="width:100%;">
+            </div>
+
 
         </div>
 
